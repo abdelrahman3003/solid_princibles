@@ -1,18 +1,12 @@
-import 'gmail.dart';
 
-class Notification {
-  Gmail gmail = Gmail();
-  HotMail hotMail = HotMail();
-  WebMail webMail = WebMail();
-  void sendGmail() {
-    gmail.send();
-  }
+import 'messeage.dart';
 
-  void sendHotmail() {
-    hotMail.send();
-  }
+class Notification extends Messeage {
+  final Messeage messeage;
 
-  void sendWebMail() {
-    webMail.send();
+  Notification(this.messeage);
+
+  void send() {
+    messeage.send();
   }
 }

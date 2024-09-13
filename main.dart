@@ -1,8 +1,7 @@
+import 'dependency_inversion/gmail.dart';
 import 'dependency_inversion/notification.dart';
 
 void main(List<String> args) {
-  Notification notification = Notification();
-  notification.sendGmail();
-  notification.sendHotmail();
-  notification.sendWebMail();
+  Notification notification = Notification(WebMail());
+  notification.send();
 }
