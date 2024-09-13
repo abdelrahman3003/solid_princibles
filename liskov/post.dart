@@ -5,14 +5,17 @@ class Post {
     return db.addPost(post);
   }
 }
-class PostTag  extends Post{
-  String createTagPost(DB db, String post) {
-    return db.addPost(post);
-  }
-}
-class PostMention extends Post{
-  String createPcreateMentionPostost(DB db, String post) {
-    return db.addPost(post);
+
+class PostTag extends Post {
+  @override
+  String createPost(DB db, String post) {
+    return db.addTagPost(post);
   }
 }
 
+class PostMention extends Post {
+  @override
+  String createPost(DB db, String post) {
+    return db.addMentionPost(post);
+  }
+}
