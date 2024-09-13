@@ -1,19 +1,10 @@
 import 'order.dart';
 
-class ProcessCard extends Order {
-  @override
-  void cachInvoice() {
-    // TODO: implement cachInvoice
-  }
-
+class ProcessCard extends CardOrder {
   @override
   void cardInvoice() {
-    // TODO: implement cardInvoice
+    // card order code
   }
 
-  @override
-  void onlinePaymentInvoice() {
-    // TODO: implement onlinePaymentInvoice
-  }
   
 }
