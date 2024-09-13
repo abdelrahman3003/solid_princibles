@@ -1,11 +1,13 @@
-import 'open-closed/employee.dart';
+import 'open-closed/analyst.dart';
+import 'open-closed/developer.dart';
+import 'open-closed/manager.dart';
 
 void main(List<String> args) {
-  Employee employee = Employee(
+  Developer employee = Developer(
       name: "abdelrahman", id: "123456", basicSalary: 10000, type: "manager");
-  Employee employee2 = Employee(
+  Analyst employee2 = Analyst(
       name: "wael", id: "1361223", basicSalary: 8000, type: "analyst");
-  Employee employee3 = Employee(
+  Manager employee3 = Manager(
       name: "khalid", id: "121212", basicSalary: 6000, type: "develper");
   employee.printEmploweeDetails();
   print("bunos of ${employee.name} is ${employee.hoursBonus(5)}");

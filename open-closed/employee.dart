@@ -1,4 +1,4 @@
-class Employee {
+abstract class Employee {
   final String name;
   final String id;
   final double basicSalary;
@@ -14,11 +14,5 @@ class Employee {
     print("Emplowee  Id : $id, Name : $name , type : $type");
   }
 
-  double hoursBonus(int hours) {
-    if (type == "analyst")
-      return (basicSalary / 30) / 8 * hours * 2;
-    else if (type == "manager") return (basicSalary / 30) / 8 * hours * 3;
-
-    return (basicSalary / 30) / 8 * hours;
-  }
+  double hoursBonus(int hours);
 }
